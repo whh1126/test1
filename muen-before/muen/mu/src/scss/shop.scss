@@ -1,0 +1,153 @@
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    background: rgba(243, 243, 247, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+section {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+
+    .parent {
+        width: 100%;
+        background: #fff;
+        padding: .3125rem .3125rem;
+        box-sizing: border-box;
+
+        .cover {
+            width: 100%;
+            padding: .625rem;
+            box-sizing: border-box;
+
+            dl {
+                width: 100%;
+                display: flex;
+                padding: .1875rem;
+                box-sizing: border-box;
+
+                dt {
+                    img {
+                        width: 100%;
+                        height: 3.0625rem;
+                    }
+                }
+
+                dd {
+                    width: 100%;
+                    margin: .625rem;
+
+                    h3 {
+                        font-weight: normal;
+                        font-size: .875rem;
+                    }
+
+                    .money {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .money_price {
+                            color: red;
+                            font-size: .875rem;
+                        }
+
+                        >div {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-end;
+
+                            >.add {
+                                font-size: .9375rem;
+                                padding: .3125rem;
+                                box-sizing: border-box;
+                            }
+
+                            >.reduce {
+                                font-size: .9375rem;
+                                padding: .3125rem;
+                                box-sizing: border-box;
+                            }
+
+                            >.money_count {
+                                font-style: normal;
+                                padding: .3125rem;
+                                box-sizing: border-box;
+                            }
+                        }
+
+                        >b {
+                            font-weight: normal;
+                            margin: .625rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.end {
+    width: 100%;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-sizing: border-box;
+    padding: .9375rem .9375rem;
+
+    .end_inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        span {
+            em {
+                padding: .1875rem .1875rem;
+                font-style: normal;
+                box-sizing: border-box;
+            }
+        }
+
+        .total {
+            font-size: 1.25rem;
+            padding: .1875rem .1875rem;
+            box-sizing: border-box;
+
+            strong {
+                font-size: .9375rem;
+                font-weight: normal;
+                color: rgba(255, 87, 51, 1);
+                padding: .1875rem .1875rem;
+                box-sizing: border-box;
+
+            }
+        }
+
+        .pay {
+            width: 5.0625rem;
+            height: 2.1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 87, 51, 1);
+            border-radius: 1rem;
+            padding: .125rem .13rem;
+            color: #fff;
+            font-size: 0.85rem;
+
+        }
+    }
+}

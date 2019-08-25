@@ -1,0 +1,7 @@
+<view>
+  <block wx:for="{{voteList}}" wx:key="index">
+    <view>
+      {{item.title}}
+    </view>
+  </block>
+</view>

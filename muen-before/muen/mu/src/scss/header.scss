@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 2.75rem;
+    padding: 0 .5rem;
+    width: 100%;
+    line-height: 2.75rem;
+    align-items: center;
+    padding-bottom: .875rem;
+    // background: rgba(255, 255, 255, 1);
+
+    .text_320X1 {
+        width: 7.125rem;
+        height: 2.25rem;
+        color: rgba(80, 80, 80, 1);
+        font-size: 1.4375rem;
+    }
+
+    .icon_110X1 {
+        width: 1.75rem;
+        height: 1.75rem;
+        line-height: 1.75rem;
+        position: relative;
+        top: .625rem;
+        font-size: 1.75rem;
+        color: rgba(0, 0, 0, 1);
+    }
+
+    span {
+        height: 1.75rem;
+    }
+
+    .my {
+        text-decoration: none;
+    }
+}
+.headerHide{
+    display: none
+}
+.messageBtn{
+    color: skyblue;
+    font-size: .7rem;
+}

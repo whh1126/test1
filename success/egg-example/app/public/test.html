@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">点击投票</button>
+    <button id="addGroup">添加小组</button>
+    <script>
+        let btn = document.querySelector('#btn');
+        let addGroup = document.querySelector('#addGroup');
+        console.log(btn, addGroup);
+        addGroup.onclick = function () {
+            console.log(111);
+            // fetch('/group/add', {
+            //     method: 'POST',
+            //     headers: {
+            //         'authorization': ` Bearer ${localStorage.getItem('token')}`,
+            //         'content-type': 'application/json'
+            //     },
+            //     body: JSON.stringify({
+            //         groupName: '赞美小组',
+            //         groupPersonNum: 10,
+            //         leaderUserName: '沐恩',
+            //         groupIcon: '' || 'http://img0.imgtn.bdimg.com/it/u=2240033465,1427047201&fm=26&gp=0.jpg',
+            //     })
+            // })
+            //     .then((res) => res.json())
+            //     .then((res) => {
+            //         console.log(res);
+            //     });
+        };
+    </script>
+
+</body>
+
+</html>

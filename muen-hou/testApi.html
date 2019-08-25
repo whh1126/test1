@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+http://localhost:7001/public/testApi.html
+-->
+
+<button id="publishVote">发布投票</button>
+
+
+<script>
+  let oPublishVote = document.querySelector('#publishVote');
+
+
+  /*
+  * 1:是否匿名
+  * 2:时间
+  * 3:单选多选
+  *
+  * 安全
+  *
+  * */
+  oPublishVote.onclick = function() {
+    fetch('/publishVote', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        userId: 12345,
+        title: '投票标题',
+        info: '投票详情介绍投票详情介绍投票详情介绍投票详情介绍投票详情介绍',
+        choose: [
+          '选项1',
+          '选项2',
+          '选项3',
+          '选项4',
+        ]
+
+      })
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res.data));
+  };
+
+</script>
+</body>
+
+</html>

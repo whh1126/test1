@@ -1,0 +1,7 @@
+<view class="home">
+  <input class="input" bindinput="inputUser" placeholder="请输入用户名" />
+  <input class="input" bindinput="inputPwd" password placeholder="请输入密码" />
+  <input class="input" bindinput="inputRealName" placeholder="真实姓名" />
+
+  <button class="button" type="primary" bindtap="register">注册</button>
+</view>

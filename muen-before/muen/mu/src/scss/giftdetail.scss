@@ -1,0 +1,208 @@
+html,
+body,
+#root,
+.gitdetail {
+    width: 100%;
+    height: 100%;
+    background: rgba(243, 243, 247, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.image {
+    width: 100%;
+    height: 12.5rem;
+
+    img {
+        width: 100%;
+        height: 12.5rem;
+    }
+
+    .icon-fanhui {
+        font-size: 1.3rem;
+        color: rgba(128, 128, 128, 1);
+        font-weight: 900;
+        position: absolute;
+        left: .2rem;
+        top: 1.2rem;
+        font-size: .875rem;
+        font-weight: bold;
+
+    }
+}
+
+section {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+
+    .price {
+        width: 100%;
+        background: #fff;
+
+        .strong {
+            color: rgba(255, 87, 51, 1);
+            font-size: 1.25rem;
+            font-weight: normal;
+            padding: .3125rem;
+            box-sizing: border-box;
+
+            b {
+                font-weight: normal;
+                font-size: .875rem;
+            }
+        }
+
+        p {
+
+            font-size: .875rem;
+            padding-left: .9375rem;
+            box-sizing: border-box;
+        }
+
+        >.uls {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: .5rem 0;
+
+            li {
+                width: 33.3%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-right: 1px solid #ccc;
+                font-size: .875rem;
+
+                .iconfont {
+                    font-size: .9375rem;
+
+                    padding: .3125rem;
+                    box-sizing: border-box;
+                }
+
+                b {
+                    font-weight: normal;
+                    font-size: .875rem;
+                }
+            }
+        }
+    }
+
+    .address {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        margin-top: .9375rem;
+        padding: .625rem;
+        box-sizing: border-box;
+        background: #fff;
+        font-size: .875rem;
+
+        span {
+            display: flex;
+            width: 3.125rem;
+        }
+
+        .strong {
+            font-weight: normal;
+        }
+
+        .one {
+            border-right: 1px solid #000;
+            padding: 0 .625rem 0 0;
+            width: 30%;
+        }
+
+        .two {
+            display: flex;
+            box-sizing: border-box;
+            justify-content: space-between;
+
+            i {
+                font-style: normal;
+                margin-left: 1.25rem;
+            }
+        }
+    }
+
+
+
+
+}
+
+.footer {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: flex-end;
+    height: 3.125rem;
+    align-items: center;
+
+    .shopcar {
+        border-radius: 1rem;
+        width: 4.9375rem;
+        height: 2.3rem;
+        display: flex;
+        align-items: center;
+        line-height: 2.3rem;
+        background: rgba(255, 87, 51, 1);
+        border-radius: 1rem;
+        padding: .125rem .13rem;
+        color: #fff;
+        box-sizing: border-box;
+        font-size: .875rem;
+        margin-right: .625rem;
+        justify-content: center;
+        margin-bottom: 0rem;
+    }
+}
+
+.actives {
+    color: red;
+}
+
+
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.gitdetail {
+    -webkit-animation-name: fadeInLeft;
+    animation-duration: .4s;
+    animation-name: fadeInLeft;
+}
